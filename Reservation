@@ -1,0 +1,53 @@
+class Reservation:
+    """Class that identifies a reservation made by a guest."""
+
+    def __init__(self, reservation_number, room, checkin, checkout, status):
+        # Initializing Reservation attributes
+        self._reservation_number = reservation_number
+        self._room = room
+        self._checkin = checkin
+        self._checkout = checkout
+        self._status = status
+
+    # Getter for reservation number
+    def get_reservation_number(self):
+        return self._reservation_number
+
+    # Getter for room
+    def get_room(self):
+        return self._room
+
+    # Getter for check-in date
+    def get_checkin(self):
+        return self._checkin
+
+    # Getter for check-out date
+    def get_checkout(self):
+        return self._checkout
+
+    # Getter for reservation status
+    def get_status(self):
+        return self._status
+
+    # Setter for reservation number
+    def set_reservation_number(self, reservation_number):
+        self._reservation_number = reservation_number
+
+    # Setter for room
+    def set_room(self, room):
+        self._room = room
+
+    # Setter for check-in date
+    def set_checkin(self, checkin):
+        self._checkin = checkin
+
+    # Setter for check-out date
+    def set_checkout(self, checkout):
+        self._checkout = checkout
+
+    # Setter for reservation status
+    def set_status(self, status):
+        self._status = status
+
+# Creating an object of the Reservation class
+reservation1 = Reservation(reservation_number="R001", room="Deluxe Suite", checkin="2024-10-01", checkout="2024-10-05", status="Confirmed")
