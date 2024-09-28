@@ -1,0 +1,53 @@
+class Room:
+    """Class that identifies a hotel room."""
+
+    def __init__(self, room, room_type, availability, price, facility):
+        # Initializing Room attributes
+        self._room = room
+        self._type = room_type
+        self._availability = availability
+        self._price = price
+        self._facility = facility
+
+    # Getter for room number/name
+    def get_room(self):
+        return self._room
+
+    # Getter for room type
+    def get_type(self):
+        return self._type
+
+    # Getter for room availability
+    def get_availability(self):
+        return self._availability
+
+    # Getter for room price
+    def get_price(self):
+        return self._price
+
+    # Getter for room facility
+    def get_facility(self):
+        return self._facility
+
+    # Setter for room number/name
+    def set_room(self, room):
+        self._room = room
+
+    # Setter for room type
+    def set_type(self, room_type):
+        self._type = room_type
+
+    # Setter for room availability
+    def set_availability(self, availability):
+        self._availability = availability
+
+    # Setter for room price
+    def set_price(self, price):
+        self._price = price
+
+    # Setter for room facility
+    def set_facility(self, facility):
+        self._facility = facility
+
+# Creating an object of the Room class
+room1 = Room(room="Deluxe Suite", room_type="Suite", availability="Available", price=500.0, facility="Sea View")
