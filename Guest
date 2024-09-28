@@ -1,0 +1,53 @@
+class Guest:
+    """Class that identifies a hotel guest."""
+
+    def __init__(self, id, name, contact, reservation_num, payment):
+        # Initializing Guest attributes
+        self._id = id
+        self._name = name
+        self._contact = contact
+        self._reservation_num = reservation_num
+        self._payment = payment
+
+    # Getter for guest ID
+    def get_id(self):
+        return self._id
+
+    # Getter for guest name
+    def get_name(self):
+        return self._name
+
+    # Getter for guest contact
+    def get_contact(self):
+        return self._contact
+
+    # Getter for reservation number
+    def get_reservation_num(self):
+        return self._reservation_num
+
+    # Getter for guest payment
+    def get_payment(self):
+        return self._payment
+
+    # Setter for guest ID
+    def set_id(self, id):
+        self._id = id
+
+    # Setter for guest name
+    def set_name(self, name):
+        self._name = name
+
+    # Setter for guest contact
+    def set_contact(self, contact):
+        self._contact = contact
+
+    # Setter for reservation number
+    def set_reservation_num(self, reservation_num):
+        self._reservation_num = reservation_num
+
+    # Setter for guest payment
+    def set_payment(self, payment):
+        self._payment = payment
+
+# Creating an object of the Guest class
+guest1 = Guest(id="G001", name="Roudha Alshaikh", contact="0562211881", reservation_num="R001", payment=0.0)
