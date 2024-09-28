@@ -1,0 +1,53 @@
+class Feedback:
+    """Class that identifies feedback for a hotel stay."""
+
+    def __init__(self, feedback_number, guest_id, reservation, rating, date):
+        # Initializing Feedback attributes
+        self._feedback_number = feedback_number
+        self._guest_id = guest_id
+        self._reservation = reservation
+        self._rating = rating
+        self._date = date
+
+    # Getter for feedback number
+    def get_feedback_number(self):
+        return self._feedback_number
+
+    # Getter for guest ID
+    def get_guest_id(self):
+        return self._guest_id
+
+    # Getter for reservation linked to feedback
+    def get_reservation(self):
+        return self._reservation
+
+    # Getter for rating given in feedback
+    def get_rating(self):
+        return self._rating
+
+    # Getter for feedback date
+    def get_date(self):
+        return self._date
+
+    # Setter for feedback number
+    def set_feedback_number(self, feedback_number):
+        self._feedback_number = feedback_number
+
+    # Setter for guest ID
+    def set_guest_id(self, guest_id):
+        self._guest_id = guest_id
+
+    # Setter for reservation linked to feedback
+    def set_reservation(self, reservation):
+        self._reservation = reservation
+
+    # Setter for feedback rating
+    def set_rating(self, rating):
+        self._rating = rating
+
+    # Setter for feedback date
+    def set_date(self, date):
+        self._date = date
+
+# Creating an object of the Feedback class
+feedback1 = Feedback(feedback_number="F001", guest_id="G001", reservation="R001", rating=4.8, date="2024-10-06")
